@@ -1,21 +1,14 @@
-The Mystery of the Old House
+Тайна старого дома
+Добро пожаловать в мою детективную историю!
 
-Welcome to my detective story!
+Эта книга — о загадочном деле, странных уликах и секрете, который нужно раскрыть. Следите за расследованием, обращайте внимание на детали и попробуйте разгадать тайну раньше, чем прочитаете финал.
+О книге
+Тихий город потрясает необычная загадка. В старом доме что-то произошло, и ответы скрыты в мелочах. Расследование начинается, но каждая найденная улика приносит новые вопросы. Возможно, каждый знает больше, чем говорит.
 
-This book is about a mysterious case, strange clues, and a secret waiting to be discovered. Follow the investigation, pay attention to the details, and see if you can solve the mystery before the ending.
+Читайте внимательно и попробуйте понять, что произошло на самом деле.
+Как читать
+Откройте файл , чтобы прочитать историю целиком. Также можно читать её на сайте проекта — в удобном книжном формате.
+О проекте
+Это мой творческий проект. История и её персонажи придуманы для оригинального детективного рассказа.
 
-## About the Story
-
-A quiet town is shaken by an unusual mystery. Something has happened at an old house, and the answers are hidden in the smallest details. As the investigation begins, clues lead to new questions, and every person may know more than they say.
-
-Read the story carefully and try to work out what really happened.
-
-## How to Read
-
-Open [`story.txt`](story.txt) to read the full story. You can also visit the project website to read it in a comfortable, book-style layout.
-
-## About This Project
-
-This is a personal creative writing project. The story and its characters are part of an original detective fiction work.
-
-Thank you for reading!
+Спасибо за чтение!
