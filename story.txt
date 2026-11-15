@@ -1,0 +1,21 @@
+The Mystery of the Old House
+
+Welcome to my detective story!
+
+This book is about a mysterious case, strange clues, and a secret waiting to be discovered. Follow the investigation, pay attention to the details, and see if you can solve the mystery before the ending.
+
+## About the Story
+
+A quiet town is shaken by an unusual mystery. Something has happened at an old house, and the answers are hidden in the smallest details. As the investigation begins, clues lead to new questions, and every person may know more than they say.
+
+Read the story carefully and try to work out what really happened.
+
+## How to Read
+
+Open [`story.txt`](story.txt) to read the full story. You can also visit the project website to read it in a comfortable, book-style layout.
+
+## About This Project
+
+This is a personal creative writing project. The story and its characters are part of an original detective fiction work.
+
+Thank you for reading!
