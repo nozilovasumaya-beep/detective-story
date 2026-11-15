@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Детективная история — читайте книгу прямо в браузере.">
+  <title>Тайна старого дома</title>
+
+  <style>
+    :root {
+      --ink: #24211f;
+      --muted: #716b65;
+      --paper: #fffdf8;
+      --background: #f2eee7;
+      --accent: #8b342b;
+      --line: #e9e2d8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 18px/1.8 Georgia, "Times New Roman", serif;
+    }
+
+    header {
+      padding: 2.5rem 1rem 1.5rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font: 700 0.75rem/1.4 system-ui, sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.15;
+    }
+
+    .hint {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font: 0.95rem/1.5 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(100% - 2rem, 760px);
+      min-height: 55vh;
+      margin: 0 auto 3rem;
+      padding: clamp(1.5rem, 6vw, 4rem);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 40px #35291b12;
+    }
+
+    #story {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    #status {
+      color: var(--muted);
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+
+    footer {
+      padding: 0 1rem 2rem;
+      color: var(--muted);
+      text-align: center;
+      font: 0.85rem/1.5 system-ui, sans-serif;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 17px;
+      }
+
+      main {
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="eyebrow">Детективная история</div>
+    <h1>Тайна старого дома</h1>
+    <p class="hint">Устройтесь поудобнее и начинайте читать</p>
+  </header>
+
+  <main aria-label="Текст книги">
+    <div id="status">Загружаю историю…</div>
+    <article id="story" hidden></article>
+  </main>
+
+  <footer>История опубликована автором на GitHub</footer>
+
+  <script>
+    fetch("./story.txt")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Файл не найден");
+        }
+        return response.text();
+      })
+      .then(text => {
+        document.getElementById("story").textContent = text;
+        document.getElementById("story").hidden = false;
+        document.getElementById("status").remove();
+      })
+      .catch(() => {
+        document.getElementById("status").textContent =
+          "Не найден файл story.txt. Добавьте его рядом с index.html в репозитории.";
+      });
+  </script>
+</body>
+</html>
